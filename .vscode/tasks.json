@@ -1,0 +1,20 @@
+
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "编译pthread",
+            "type": "shell",
+            "command": "C:/mingw64_15/mingw64/bin/gcc.exe", // 用你截图中的gcc路径
+            "args": [
+                "${file}",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe",
+                "-lpthread", // 关键：链接pthread库
+                "-g"
+            ],
+            "group": {"kind":"build","isDefault":true},
+            "problemMatcher": ["$gcc"]
+        }
+    ]
+}

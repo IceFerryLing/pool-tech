@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "C:/mingw64_15/mingw64/include",  // MinGW头文件路径（按你的安装路径改）
+                "C:/mingw64_15/mingw64/x86_64-w64-mingw32" // 64位MinGW补充路径
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "compilerPath": "C:/mingw64_15/mingw64/bin/gcc.exe", // MinGW的gcc路径
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "windows-gcc-x64" // 改为gcc模式，适配MinGW
+        }
+    ],
+    "version": 4
+}
